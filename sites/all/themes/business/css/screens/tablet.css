@@ -1,0 +1,186 @@
+/* COLORS */
+/* BORDER */
+/*font-size*/
+/* BUTTON */
+/* line 25, ../../sass/includes/_include.scss */
+.grey_button {
+  background: #ddd;
+  color: #000;
+  display: inline-block;
+  padding: 5px 10px;
+}
+/* line 30, ../../sass/includes/_include.scss */
+.grey_button:hover, .grey_button:focus {
+  color: #fff;
+  background-color: #e09b0f;
+}
+
+/* line 36, ../../sass/includes/_include.scss */
+.blue_button, .form-submit {
+  margin: 0 10px 10px 0;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: bold;
+  background: #0d436f;
+  cursor: pointer;
+}
+/* line 44, ../../sass/includes/_include.scss */
+.blue_button:hover, .blue_button:focus, .form-submit:hover, .form-submit:focus {
+  background-color: #e09b0f;
+}
+
+/* line 49, ../../sass/includes/_include.scss */
+.font_awesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* Transition */
+/*table*/
+/* line 4, ../../sass/screens/tablet.scss */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*slideshow*/
+/* line 11, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .views-slideshow-cycle-main-frame {
+  width: 100% !important;
+}
+/* line 14, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .views-slideshow-cycle-main-frame-row {
+  width: 100% !important;
+}
+/* line 18, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .views-field-title a {
+  font-size: 1.23em;
+}
+/* line 22, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .slideshow-info-wrapper {
+  top: 140px;
+}
+/* line 25, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .views-slideshow-controls-top {
+  top: 110px;
+}
+/* line 30, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .views-field-type-image:before,
+#slideshow-wrapper .blue_buttonviews-field-field-slideshow:before {
+  height: 100%;
+}
+/* line 33, ../../sass/screens/tablet.scss */
+#slideshow-wrapper .views-field-type-image:after,
+#slideshow-wrapper .blue_buttonviews-field-field-slideshow:after {
+  height: 100%;
+}
+
+/* line 39, ../../sass/screens/tablet.scss */
+#page-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* panel first */
+/* line 46, ../../sass/screens/tablet.scss */
+#panel-first-wrapper .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  background: none;
+}
+
+/*partners*/
+/* line 57, ../../sass/screens/tablet.scss */
+#page .jcarousel-container .jcarousel-clip-horizontal .jcarousel-item {
+  margin-right: 15px;
+}
+
+/*panel four*/
+/* line 66, ../../sass/screens/tablet.scss */
+.social-wrap h3 {
+  float: none;
+  margin-bottom: 5px;
+}
+
+/*sidebar-second*/
+/* line 75, ../../sass/screens/tablet.scss */
+#sidebar-second .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
+  width: 100% !important;
+}
+/* line 78, ../../sass/screens/tablet.scss */
+#sidebar-second .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
+  width: 100% !important;
+}
+
+/*page about*/
+/* line 86, ../../sass/screens/tablet.scss */
+#title-wrapper .container {
+  padding: 0 15px !important;
+}
+
+/*comment-preview*/
+/* line 94, ../../sass/screens/tablet.scss */
+.comment h3,
+.comment-preview h3 {
+  font-size: 1.39em;
+}
+
+/*page gallery*/
+/* line 115, ../../sass/screens/tablet.scss */
+.galleries-list .field-type-image,
+.galleries-list .views-field-type-image {
+  float: none !important;
+  margin: 0 !important;
+}
+
+/*page contact*/
+/* line 123, ../../sass/screens/tablet.scss */
+.contact-form .form-type-checkbox {
+  padding-left: 0;
+}
+/* line 126, ../../sass/screens/tablet.scss */
+.contact-form label {
+  float: none;
+  margin-right: 0;
+}
+
+/*page contact*/
+/* line 134, ../../sass/screens/tablet.scss */
+.contact-form label {
+  display: block;
+}
+/* line 137, ../../sass/screens/tablet.scss */
+.contact-form .form-actions {
+  padding-left: 0;
+}
+
+/* line 144, ../../sass/screens/tablet.scss */
+#panel-fifth-wrapper .view-photo-stream .views-row, #panel-fifth-wrapper .photo-list .views-row {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 148, ../../sass/screens/tablet.scss */
+#panel-fifth-wrapper .view-photo-stream .grid-inner, #panel-fifth-wrapper .photo-list .grid-inner {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 152, ../../sass/screens/tablet.scss */
+#panel-fifth-wrapper .view-photo-stream a, #panel-fifth-wrapper .photo-list a {
+  display: block;
+}
+
+/* line 159, ../../sass/screens/tablet.scss */
+.simplenews-subscribe .form-text {
+  width: 100%;
+  float: none;
+}
+/* line 163, ../../sass/screens/tablet.scss */
+.simplenews-subscribe .form-submit {
+  width: 100%;
+  float: none;
+  margin: 0;
+}

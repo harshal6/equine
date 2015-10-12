@@ -1,0 +1,63 @@
+/* COLORS */
+$blue: #0c426f;
+$orange: #e09b0f;
+$black: #000;
+$grey: #ddd;
+$dark: #bbb;
+$grey_2: #666;
+$white: #fff;
+$dark_grey: #222;
+
+/* BORDER */
+$border_grey_color: 1px solid #ddd;
+
+/*font-size*/
+$font-size-12: 0.92em;
+$font-size-13: 1em;
+$font-size-14: 1.08em;
+$font-size-16: 1.23em;
+$font-size-18: 1.39em;
+$font-size-20: 1.54em;
+$font-size-22: 1.69em;
+$font-size-25: 1.92em;
+
+/* BUTTON */
+.grey_button {
+  background: #ddd;
+  color: #000;
+  display: inline-block;
+  padding: 5px 10px;
+  &:hover, &:focus {
+    color: #fff;
+    background-color: $orange;
+  }
+}
+
+.blue_button, .form-submit {
+  margin: 0 10px 10px 0;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: bold;
+  background: #0d436f;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: $orange;
+  }
+}
+
+.font_awesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* Transition */
+@mixin transition($time) {
+  transition: all #{$time}s ease-in-out;
+  -webkit-transition: all #{$time}s ease-in-out;
+  -moz-transition: all #{$time}s ease-in-out;
+  -o-transition: all #{$time}s ease-in-out;
+}

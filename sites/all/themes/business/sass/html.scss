@@ -1,0 +1,90 @@
+@import "includes/_include";
+
+/* html.scss */
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+header, nav, section, article, figure, aside, footer {
+  display: block;
+}
+a {
+  color: $blue;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: $orange;
+}
+h1, .h1 {
+  font-size: 24px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+address {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* button */
+.btn-1 {
+  background: $orange;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  &:hover, &:focus {
+    background: $blue;
+    color: #fff;
+  }
+}
+
+/* primary menu */
+ul.primary {
+  margin: 0 0 15px;
+  padding: 0;
+  border-color: $grey !important;
+  a {
+    border-color: $grey !important;
+    display: inline-block;
+    padding: 5px !important;
+    border-bottom: none !important;
+  }
+}
+
+input, button, select, textarea {
+  padding: 7px;
+  border: 1px solid #ddd;
+}
+
+p{
+  margin-bottom: 15px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  margin-top: -3px;
+}
+
+fieldset{
+  min-height: 30px;
+  legend{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}

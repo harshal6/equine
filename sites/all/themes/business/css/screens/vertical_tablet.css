@@ -1,0 +1,118 @@
+/* COLORS */
+/* BORDER */
+/*font-size*/
+/* BUTTON */
+/* line 25, ../../sass/includes/_include.scss */
+.grey_button {
+  background: #ddd;
+  color: #000;
+  display: inline-block;
+  padding: 5px 10px;
+}
+/* line 30, ../../sass/includes/_include.scss */
+.grey_button:hover, .grey_button:focus {
+  color: #fff;
+  background-color: #e09b0f;
+}
+
+/* line 36, ../../sass/includes/_include.scss */
+.blue_button, .form-submit {
+  margin: 0 10px 10px 0;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: bold;
+  background: #0d436f;
+  cursor: pointer;
+}
+/* line 44, ../../sass/includes/_include.scss */
+.blue_button:hover, .blue_button:focus, .form-submit:hover, .form-submit:focus {
+  background-color: #e09b0f;
+}
+
+/* line 49, ../../sass/includes/_include.scss */
+.font_awesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* Transition */
+/*vertical tablet*/
+/*slideshow*/
+/* line 7, ../../sass/screens/vertical_tablet.scss */
+#slideshow-wrapper .slideshow-info-wrapper {
+  top: 80px;
+}
+/* line 10, ../../sass/screens/vertical_tablet.scss */
+#slideshow-wrapper .views-slideshow-controls-top {
+  top: 50px;
+}
+/* line 13, ../../sass/screens/vertical_tablet.scss */
+#slideshow-wrapper .slideshow-info-wrapper {
+  left: 20px;
+}
+/* line 16, ../../sass/screens/vertical_tablet.scss */
+#slideshow-wrapper .views-slideshow-controls-text-previous {
+  margin-left: 20px;
+}
+
+/* line 26, ../../sass/screens/vertical_tablet.scss */
+.skin-black #slideshow-wrapper .views-field-type-image:before {
+  background: url("../colors/black/images/bg-mask-left-tablet.png") 0 0 repeat-y;
+  width: 200px;
+}
+/* line 30, ../../sass/screens/vertical_tablet.scss */
+.skin-black #slideshow-wrapper .views-field-type-image:after {
+  background: url("../colors/black/images/bg-mask-right-tablet.png") 0 0 repeat-y;
+  width: 200px;
+}
+
+/* line 42, ../../sass/screens/vertical_tablet.scss */
+#panel-first-wrapper .intro {
+  font-size: 1.23em;
+}
+
+/*panel second*/
+/* line 50, ../../sass/screens/vertical_tablet.scss */
+#panel-second-wrapper .views-field-type-image,
+#panel-second-wrapper .views-field-picture {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/*partners*/
+/* line 61, ../../sass/screens/vertical_tablet.scss */
+#page .jcarousel-container .jcarousel-clip-horizontal .jcarousel-item {
+  margin-right: 12px;
+  width: 171px;
+}
+
+/*newsletter-subscribe-form*/
+/* line 71, ../../sass/screens/vertical_tablet.scss */
+#newsletter-subscribe-form .form-text {
+  width: 40%;
+}
+
+/* line 76, ../../sass/screens/vertical_tablet.scss */
+.comment, .comment-preview {
+  margin-bottom: 30px;
+}
+/* line 78, ../../sass/screens/vertical_tablet.scss */
+.comment h3, .comment-preview h3 {
+  font-size: 1.39em;
+}
+
+/* line 85, ../../sass/screens/vertical_tablet.scss */
+#comments .comment .user-picture {
+  top: 10px;
+  left: 10px;
+}
+
+/* line 93, ../../sass/screens/vertical_tablet.scss */
+.featured-partners-list .grid {
+  padding: 15px;
+}

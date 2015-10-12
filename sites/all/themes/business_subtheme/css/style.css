@@ -1,0 +1,37 @@
+#main-menu-wrapper {
+/**    background: url(/images/bg-menu.gif) repeat-x 0 100% #d64c22;**/
+}
+#main-menu-wrapper {
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,0.25);
+    height: 42px;
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+#main-menu-wrapper ul.menu li a.active {
+/**    background: url(/images/bg-menu-active.gif) repeat-x 0 100% #a02b08;**/
+    color: #fff;
+}
+#main-menu-wrapper ul.menu li a, #main-menu-wrapper ul.menu li a:visited {
+    color: #fff;
+}
+
+#main-menu-wrapper ul.menu li a.active {
+/**    background: url(/images/bg-menu-active.gif) repeat-x 0 100% #e7d094;**/
+
+}
+
+
+#main-menu-wrapper ul.menu li a, #main-menu-wrapper ul.menu li a:visited {
+
+}
+
+.sf-menu.sf-style-default a, #main-menu-wrapper ul.menu li a {
+    border-left: none;
+    border-top: none;
+    font-family: Corbel,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+}

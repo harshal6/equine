@@ -1,0 +1,520 @@
+@import "../../includes/_include";
+
+$red: #ff5328;
+
+a {
+  color: $red;
+  &:hover, &:focus {
+    color: $dark_grey;
+  }
+}
+
+/* header */
+#header-wrapper {
+  background: $white;
+}
+
+@media (min-width: 992px) {
+  /* nav */
+  #main-menu-wrapper {
+    background: $dark_grey;
+  }
+  .tb-megamenu {
+    color: #ccc;
+    .nav {
+      > li {
+        border-left-color: $black;
+        > a {
+          border-left-color: #3d3d3d;
+          &:hover, &:focus {
+            background-color: #383838;
+            border-left-color: #3d3d3d;
+          }
+        }
+      }
+      .active {
+        > a {
+          background-color: #ff5328;
+          &:hover, &:focus {
+            background-color: $red;
+          }
+        }
+      }
+      li.dropdown.active > .dropdown-toggle,
+      li.dropdown.open.active > .dropdown-toggle,
+      > li.dropdown.open.active > a:hover {
+        background-color: $red;
+        border-left-color: #3d3d3d;
+      }
+      li.dropdown.open {
+        > .dropdown-toggle {
+          background-color: #383838;
+        }
+      }
+    }
+    .dropdown-menu {
+      background-color: #383838;
+      li {
+        > a {
+          color: #ccc;
+          border-top-color: #444 !important;
+          &:hover, &:focus {
+            color: $red;
+          }
+        }
+      }
+      .active {
+        > a {
+          background: none;
+          color: #c5c5c5;
+          &:hover, &:focus {
+            background: none;
+            color: $red;
+          }
+        }
+      }
+    }
+    .mega-nav .mega-group > .mega-group-title,
+    .dropdown-menu .mega-nav .mega-group > .mega-group-title,
+    .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
+      color: #ccc !important;
+      &:hover, &:focus {
+        color: $red !important;
+      }
+    }
+    .mega-group .tb-megamenu-submenu {
+      background: #383838;
+    }
+    .dropdown-menu li > a:hover,
+    .dropdown-menu li > a:focus,
+    .dropdown-submenu:hover > a {
+      color: $red;
+    }
+    .views-row {
+      border-bottom-color: #444 !important;
+      .views-field-title {
+        a {
+          color: #ccc;
+          &:hover, &:focus {
+            color: $red;
+          }
+        }
+      }
+    }
+    .row-fluid + .row-fluid {
+      border-top-color: #444;
+    }
+  }
+  /* menu default */
+  #main-menu-wrapper {
+    background: $dark_grey;
+    ul.menu {
+      .active-trail {
+        background: $red;
+      }
+      > li {
+        border-left-color: #000;
+        > a {
+          border-left-color: #3d3d3d;
+          &:hover, &:focus {
+            background-color: #383838;
+          }
+        }
+        > .active {
+          background-color: $red;
+        }
+      }
+      li {
+        ul.menu {
+          background-color: #383838;
+          li {
+            a {
+              border-color: #444;
+              &:hover, &:focus {
+                background: $red;
+              }
+            }
+            &:hover, &:focus {
+              > a {
+                background: $red;
+                &:before {
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .expanded {
+            > a {
+              &:before {
+                color: #c5c5c5;
+              }
+            }
+          }
+        }
+        &:hover, &:focus {
+          > a {
+            background-color: #383838;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* slideshow */
+#slideshow-wrapper {
+  border-top-color: $black;
+  background: #d9ddde;
+  .views-field-type-image {
+    &:before {
+      background: url(images/bg-mask-left.png) 0 repeat-y;
+    }
+    &:after {
+      background: url(images/bg-mask-right.png) 0 repeat-y;
+    }
+  }
+  .views-slideshow-controls-text-previous, .views-slideshow-controls-text-next {
+    background: rgba(0, 0, 0, 0.8);
+    color: #999;
+    &:hover, &:focus {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+/* ****/
+.views-field-title, .views-field-name {
+  a {
+    color: $dark_grey;
+    &:hover, &:focus {
+      color: $red;
+    }
+  }
+}
+
+/* sidebar */
+.sidebar, .menu-list {
+  .item-list {
+    li {
+      a {
+        &:hover, &:focus {
+          color: $red;
+        }
+      }
+    }
+  }
+  .quicktabs-tabs {
+    .active {
+      a {
+        border-top-color: $red;
+      }
+    }
+  }
+}
+
+/* panel third */
+#panel-first-wrapper {
+  background-color: #d1d1d1;
+}
+
+/* panel third */
+#page {
+  .jcarousel-container {
+    .jcarousel-prev, .jcarousel-next {
+      &:hover, &:focus {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+/* flexslider */
+.flexslider {
+  .flex-control-paging {
+    .flex-active {
+      background-color: $red;
+    }
+  }
+}
+
+/* socials */
+.social-wrap {
+  .social-list {
+    li {
+      a {
+        background-color: $dark_grey;
+        &:hover, &:focus {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}
+
+/* newsletter */
+#newsletter-subscribe-form {
+  .form-submit {
+    background-color: $dark_grey;
+    &:hover, &:focus {
+      background-color: $red;
+    }
+  }
+}
+
+/* panel fifth */
+#panel-fifth-wrapper {
+  background-color: #424956;
+  border-bottom-color: $black;
+  color: #c5c5c5;
+  ul.menu {
+    li {
+      a {
+        color: #c5c5c5;
+        &:hover, &:focus {
+          color: $red;
+        }
+      }
+    }
+  }
+  .item-list {
+    ul {
+      li {
+        border-bottom-color: #5a6271;
+        a {
+          color: #c5c5c5;
+          &:hover, &:focus {
+            color: $red;
+          }
+        }
+        span {
+          color: #c5c5c5;
+        }
+      }
+    }
+  }
+  .view-photo-stream, .photo-list {
+    a {
+      border-color: #626a76;
+      &:hover, &:focus {
+        border-color: #888;
+      }
+    }
+  }
+  #newsletter-subscribe-form {
+    .form-submit {
+      background-color: $red;
+      &:hover, &:focus {
+        background-color: $dark_grey;
+      }
+    }
+  }
+}
+
+/* breadcrumb */
+#breadcrumb-wrapper {
+  background-color: #424956;
+  border-bottom-color: $black;
+  border-top-color: #5a6271;
+  .breadcrumb {
+    color: #c5c5c5;
+    a {
+      color: #c5c5c5;
+      &:hover, &:focus {
+        color: $red;
+      }
+    }
+  }
+}
+
+.ads-list, .view-ads {
+  .views-field-title {
+    a {
+      &:hover, &:focus {
+        color: $red;
+      }
+    }
+  }
+}
+
+/* footer */
+#footer-wrapper {
+  background-color: #323841;
+  border-top-color: #5a6271;
+  color: #c5c5c5;
+  a {
+    color: $red;
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+  #block-menu-menu-footer-menu {
+    ul.menu {
+      li {
+        border-left-color: #c5c5c5;
+        a {
+          color: #c5c5c5;
+          &:hover, &:focus {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* content*/
+#block-system-main {
+  .content {
+    .node {
+      h2 {
+        a {
+          color: $dark_grey;
+          &:hover, &:focus {
+            color: $red;
+          }
+        }
+      }
+    }
+    .our-members-list, .view-our-members {
+      .grid-inner {
+        .social-group {
+          a {
+            color: $red !important;
+          }
+        }
+        &:hover, &:focus {
+          .social-group {
+            a {
+              color: $red !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#block-system-main .content .ui-accordion, .ui-accordion {
+  .ui-state-active {
+    background-color: $red;
+  }
+}
+
+/* pager */
+.item-list {
+  .pager {
+    li {
+      a {
+        &:hover, &:focus {
+          background-color: $red;
+        }
+      }
+    }
+    .pager-current {
+      background-color: $red;
+    }
+  }
+}
+
+/* comment */
+#comments {
+  .comment {
+    h3 {
+      a {
+        color: $dark_grey;
+        &:hover, &:focus {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+/* forum */
+.action-links {
+  li {
+    a {
+      background-color: $red;
+      &:hover, &:focus {
+        background-color: $dark_grey;
+      }
+    }
+  }
+}
+
+/* button */
+.btn-1 {
+  background-color: $red;
+  &:hover, &:focus {
+    background-color: $dark_grey;
+  }
+}
+
+.blue_button, .form-submit {
+  background-color: $red;
+  &:hover, &:focus {
+    background-color: $dark_grey;
+  }
+}
+
+.grey_button:hover,
+.node ul.links a:hover,
+.comment .links a:hover,
+#comments .comment .links a:hover,
+.grey_button:focus,
+.node ul.links a:focus,
+.comment .links a:focus,
+#comments .comment .links a:focus {
+  background-color: $red;
+}
+
+.blue_button,
+#comments .form-actions .form-submit,
+.contact-form .form-actions .form-submit,
+.form-submit {
+  background-color: $red;
+  &:hover, &:focus {
+    background-color: $dark_grey;
+  }
+}
+
+/* form search */
+.search-form {
+  .form-submit {
+    background-color: $dark_grey;
+    &:hover, &:focus {
+      background-color: $red;
+    }
+  }
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+  #slideshow-wrapper {
+    border: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #slideshow-wrapper {
+    border: none;
+  }
+}
+
+.blog-list {
+  .views-field-name {
+    a {
+      color: $red;
+      &:hover, &:focus {
+        color: $black;
+      }
+    }
+  }
+  .views-field-view-node {
+    a {
+      &:hover, &:focus {
+        background-color: $red;
+      }
+    }
+  }
+}

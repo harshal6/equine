@@ -1,0 +1,94 @@
+name = Business SubTheme
+description = Theme for the Companies
+version = VERSION
+core = 7.x
+engine = 'phptemplate'
+base theme = business
+
+
+stylesheets[all][] = css/style.css
+
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+
+regions[header] = Header
+regions[slideshow] = Slideshow
+regions[main_menu] = Main Menu
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[panel_featured_1] = Panel Featured
+
+regions[panel_first_1] = Panel First 1
+regions[panel_first_2] = Panel First 2
+regions[panel_first_3] = Panel First 3
+regions[panel_first_4] = Panel First 4
+
+regions[panel_second_1] = Panel Second 1
+regions[panel_second_2] = Panel Second 2
+regions[panel_second_3] = Panel Second 3
+regions[panel_second_4] = Panel Second 4
+regions[panel_third_1] = Panel Third 1
+regions[panel_third_2] = Panel Third 2
+regions[panel_third_3] = Panel Third 3
+regions[panel_third_4] = Panel Third 4
+regions[panel_fourth_1] = Panel Fourth 1
+regions[panel_fourth_2] = Panel Fourth 2
+regions[panel_fourth_3] = Panel Fourth 3
+regions[panel_fourth_4] = Panel Fourth 4
+regions[panel_fifth_1] = Panel Fifth 1
+regions[panel_fifth_2] = Panel Fifth 2
+regions[panel_fifth_3] = Panel Fifth 3
+regions[panel_fifth_4] = Panel Fifth 4
+regions[panel_sixth_1] = Panel Sixth 1
+regions[panel_sixth_2] = Panel Sixth 2
+regions[panel_sixth_3] = Panel Sixth 3
+regions[panel_sixth_4] = Panel Sixth 4
+
+regions[footer] = Footer
+
+settings[sidebar_first_width] = 3
+settings[sidebar_second_width] = 3
+
+settings[panel_first_1_width] = 12
+settings[panel_featured_1_width] = 12
+settings[panel_second_1_width] = 3
+settings[panel_second_2_width] = 3
+settings[panel_second_3_width] = 3
+settings[panel_second_4_width] = 3
+settings[panel_third_1_width] = 12
+settings[panel_fourth_1_width] = 6
+settings[panel_fourth_2_width] = 3
+settings[panel_fourth_3_width] = 3
+settings[panel_fourth_4_width] = 0
+settings[panel_fifth_1_width] = 3
+settings[panel_fifth_2_width] = 3
+settings[panel_fifth_3_width] = 3
+settings[panel_fifth_4_width] = 3
+settings[panel_sixth_1_width] = 3
+settings[panel_sixth_2_width] = 3
+settings[panel_sixth_3_width] = 3
+settings[panel_sixth_4_width] = 3
+
+skins[black] = 'Black'
+skins[white] = 'White'
+
+backgrounds[bg-1] = 'Background 1'
+backgrounds[bg-2] = 'Background 2'
+backgrounds[bg-3] = 'Background 3'
+backgrounds[bg-4] = 'Background 4'
+backgrounds[bg-5] = 'Background 5'
+backgrounds[bg-6] = 'Background 6'
+
+layout[layout-boxed] = Boxed Layout
+settings[layout_width_default] = 1200
