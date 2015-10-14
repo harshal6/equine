@@ -926,7 +926,6 @@
     display: none;
 }
 
-
 #main-menu-wrapper {
     display: none;
 }
@@ -940,7 +939,7 @@
     #main-menu-wrapper {
         display: block;
         border: none;
-        border-bottom: 2px solid #d14b0a;
+        border-bottom: 2px solid #cd6235;
         background: #f9a145;
         /* Old browsers */
         background: -moz-linear-gradient(top, #f9a145 0%, #f26400 100%);
@@ -960,31 +959,48 @@
         margin: 0;
         box-shadow: none;
         border-radius: 0;
-        
-        ul {
-            margin: 0;
-            padding: 0;
-            > li {
-                list-style-image: none;
-                list-style-type: none;
-                padding: 0;
+        .content {
+            ul {
                 margin: 0;
-                display: block;
-                float: left;
-                border-left: 1px solid #ffa500;
-                position: relative;
-                > a {
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    line-height: 18px;
-                    padding: 11px 25px;
+                padding: 0;
+                > li {
+                    list-style-image: none;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
                     display: block;
-                    border-left: 1px solid #bf6722;
-                    font-weight: 700;
-                    &:hover,
-                    &:focus {
-                        text-decoration: none;
+                    float: left;
+                    border-left: 1px solid #ffa500;
+                    position: relative;
+                    > a {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 11px 25px;
+                        display: block;
+                        border-left: 1px solid #bf6722;
+                        font-weight: 700;
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            background: #f26400;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* FF3.6+ */
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f26400), color-stop(99%, #f9a145));
+                            /* Chrome,Safari4+ */
+                            background: -webkit-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* Chrome10+,Safari5.1+ */
+                            background: -o-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* Opera 11.10+ */
+                            background: -ms-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* IE10+ */
+                            background: linear-gradient(to bottom, #f26400 0%, #f9a145 99%);
+                        }
+                    }
+                    > .active,
+                    &.active-trail > a {
                         background: #f26400;
                         /* Old browsers */
                         background: -moz-linear-gradient(top, #f26400 0%, #f9a145 99%);
@@ -999,144 +1015,142 @@
                         /* IE10+ */
                         background: linear-gradient(to bottom, #f26400 0%, #f9a145 99%);
                     }
+                    &.menuparent.last {
+                        > ul {
+                            right: 0 !important;
+                            left: auto !important;
+                            &:before {
+                                right: 35px;
+                                left: auto;
+                            }
+                        }
+                    }
                 }
-                > .active, &.active-trail > a {
-                    background: #f26400;
-                    /* Old browsers */
-                    background: -moz-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                    /* FF3.6+ */
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f26400), color-stop(99%, #f9a145));
-                    /* Chrome,Safari4+ */
-                    background: -webkit-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                    /* Chrome10+,Safari5.1+ */
-                    background: -o-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                    /* Opera 11.10+ */
-                    background: -ms-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                    /* IE10+ */
-                    background: linear-gradient(to bottom, #f26400 0%, #f9a145 99%);
-                }
-            }
-            li {
-                ul {
-                    border-radius: 0;
-                    -webkit-border-raidus: none;
-                    position: absolute;
-                    left: 0;
-                    display: none;
-                    width: 260px !important;
-                    font-size: 13px;
-                    z-index: 999;
-                    overflow: visible !important;
-                    background: #414141; /* Old browsers */
-                    background: -moz-linear-gradient(top, #414141 0%, #010101 100%); /* FF3.6+ */
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#414141), color-stop(100%,#010101)); /* Chrome,Safari4+ */
-                    background: -webkit-linear-gradient(top, #414141 0%,#010101 100%); /* Chrome10+,Safari5.1+ */
-                    background: -o-linear-gradient(top, #414141 0%,#010101 100%); /* Opera 11.10+ */
-                    background: -ms-linear-gradient(top, #414141 0%,#010101 100%); /* IE10+ */
-                    background: linear-gradient(to bottom, #414141 0%,#010101 100%); /* W3C */
-                    border-style: solid;
-                    border-width: 1px 2px 2px;
-                    border-color: #0c0c0c;
-                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-                    padding: 0;
-                    &:hover {
+                li {
+                    ul {
+                        border-radius: 0;
+                        -webkit-border-raidus: none;
+                        position: absolute;
+                        left: 0;
+                        display: none;
+                        width: 260px !important;
+                        font-size: 13px;
+                        z-index: 999;
+                        overflow: visible !important;
+                        background: #414141;
+                        /* Old browsers */
+                        background: -moz-linear-gradient(top, #414141 0%, #010101 100%);
+                        /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #414141), color-stop(100%, #010101));
+                        /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top, #414141 0%, #010101 100%);
+                        /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top, #414141 0%, #010101 100%);
+                        /* Opera 11.10+ */
+                        background: -ms-linear-gradient(top, #414141 0%, #010101 100%);
+                        /* IE10+ */
+                        background: linear-gradient(to bottom, #414141 0%, #010101 100%);
+                        /* W3C */
+                        border-style: solid;
+                        border-width: 1px 2px 2px;
+                        border-color: #0c0c0c;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+                        padding: 0;
                         &:before {
+                            content: "";
+                            border-style: solid;
+                            border-width: 0 7px 7px 7px;
+                            border-color: transparent transparent #171717 transparent;
+                            position: absolute;
+                            top: -7px;
+                            left: 35px;
                             display: block;
                         }
-                    }
-                    &:before {
-                        content: "";
-                        border-style: solid;
-                        border-width: 0 9px 9px 9px;
-                        border-color: transparent transparent #171717 transparent;
-                        position: absolute;
-                        top: -9px;
-                        left: 35px;
-                        display: none;
-                    }
-                    li {
-                        float: none;
-                        border-left: none;
-                        position: relative;
-                        margin-left: 0;
-                        border-top: 1px solid #625129;
-                        &.active-trail > a{
-                            background: none !important;
-                            color: #e0c06f;
-                            .sf-sub-indicator {
-                                color: #e0c06f;
-                            }
-                        }
-                        a {
-                            background: none !important;
-                            font-size: 13px;
-                            color: #ad9457;
-                            padding: 10px 24px;
+                        li {
+                            float: none;
                             border-left: none;
-                            text-transform: none;
-                            .sf-sub-indicator {
-                                color: #ad9457;
-                            }
-                            &:hover,
-                            &:focus, &.active {
+                            position: relative;
+                            margin-left: 0;
+                            border-top: 1px solid #625129;
+                            &.active-trail > a {
                                 background: none !important;
                                 color: #e0c06f;
                                 .sf-sub-indicator {
                                     color: #e0c06f;
                                 }
                             }
-                        }
-                        ul {
-                            left: 100% !important;
-                            top: 0 !important;
-                            &:before {
-                                display: none !important;
+                            a {
+                                background: none !important;
+                                font-size: 13px;
+                                color: #ad9457;
+                                padding: 10px 24px;
+                                border-left: none;
+                                text-transform: none;
+                                .sf-sub-indicator {
+                                    color: #ad9457;
+                                }
+                                &:hover,
+                                &:focus,
+                                &.active {
+                                    background: none !important;
+                                    color: #e0c06f;
+                                    .sf-sub-indicator {
+                                        color: #e0c06f;
+                                    }
+                                }
+                            }
+                            ul {
+                                left: 100% !important;
+                                top: 0 !important;
+                                &:before {
+                                    display: none !important;
+                                }
+                            }
+                            &:hover,
+                            &:focus {
+                                > a {
+                                    color: #e0c06f;
+                                    .sf-sub-indicator {
+                                        color: #e0c06f;
+                                    }
+                                }
                             }
                         }
-                        &:hover,
-                        &:focus {
+                        .expanded {
                             > a {
-                                color: #e0c06f;
-                                .sf-sub-indicator {
-                                    color: #e0c06f;
+                                &:before {
+                                    content: "\f0d7";
+                                    font-size: 14px;
+                                    color: #5b94c1;
+                                    position: absolute;
+                                    @extend .font_awesome;
+                                    right: 10px;
+                                    top: 50%;
+                                    margin-top: -6px;
                                 }
                             }
                         }
                     }
-                    .expanded {
+                    &:hover,
+                    &:focus {
                         > a {
-                            &:before {
-                                content: "\f0d7";
-                                font-size: 14px;
-                                color: #5b94c1;
-                                position: absolute;
-                                @extend .font_awesome;
-                                right: 10px;
-                                top: 50%;
-                                margin-top: -6px;
-                            }
+                            background: #f26400;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* FF3.6+ */
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f26400), color-stop(99%, #f9a145));
+                            /* Chrome,Safari4+ */
+                            background: -webkit-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* Chrome10+,Safari5.1+ */
+                            background: -o-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* Opera 11.10+ */
+                            background: -ms-linear-gradient(top, #f26400 0%, #f9a145 99%);
+                            /* IE10+ */
+                            background: linear-gradient(to bottom, #f26400 0%, #f9a145 99%);
                         }
-                    }
-                }
-                &:hover,
-                &:focus {
-                    > a {
-                        background: #f26400;
-                        /* Old browsers */
-                        background: -moz-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                        /* FF3.6+ */
-                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f26400), color-stop(99%, #f9a145));
-                        /* Chrome,Safari4+ */
-                        background: -webkit-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                        /* Chrome10+,Safari5.1+ */
-                        background: -o-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                        /* Opera 11.10+ */
-                        background: -ms-linear-gradient(top, #f26400 0%, #f9a145 99%);
-                        /* IE10+ */
-                        background: linear-gradient(to bottom, #f26400 0%, #f9a145 99%);
-                    }
-                    > ul {
-                        display: block;
+                        > ul {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -1461,16 +1475,9 @@
             }
         }
         > li {
-            &:hover ul,
-            &.sfHover ul {
-                top: 40px;
-                &:before {
-                    display: block;
-                }
-            }
-        }
-        > li {
-            &.active-trail, &:hover, &:focus {
+            &.active-trail,
+            &:hover,
+            &:focus {
                 > a .sf-sub-indicator {
                     display: none;
                 }
