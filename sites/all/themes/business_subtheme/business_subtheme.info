@@ -6,8 +6,6 @@ engine = 'phptemplate'
 base theme = business
 
 
-stylesheets[all][] = css/style.css
-
 features[] = 'logo'
 features[] = 'name'
 features[] = 'slogan'
