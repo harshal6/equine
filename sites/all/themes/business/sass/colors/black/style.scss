@@ -15,10 +15,6 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* nav */
-  #main-menu-wrapper {
-    background: $dark_grey;
-  }
   .tb-megamenu {
     color: #ccc;
     .nav {
@@ -103,60 +99,6 @@ a {
     }
     .row-fluid + .row-fluid {
       border-top-color: #444;
-    }
-  }
-  /* menu default */
-  #main-menu-wrapper {
-    background: $dark_grey;
-    ul.menu {
-      .active-trail {
-        background: $red;
-      }
-      > li {
-        border-left-color: #000;
-        > a {
-          border-left-color: #3d3d3d;
-          &:hover, &:focus {
-            background-color: #383838;
-          }
-        }
-        > .active {
-          background-color: $red;
-        }
-      }
-      li {
-        ul.menu {
-          background-color: #383838;
-          li {
-            a {
-              border-color: #444;
-              &:hover, &:focus {
-                background: $red;
-              }
-            }
-            &:hover, &:focus {
-              > a {
-                background: $red;
-                &:before {
-                  color: #fff;
-                }
-              }
-            }
-          }
-          .expanded {
-            > a {
-              &:before {
-                color: #c5c5c5;
-              }
-            }
-          }
-        }
-        &:hover, &:focus {
-          > a {
-            background-color: #383838;
-          }
-        }
-      }
     }
   }
 }

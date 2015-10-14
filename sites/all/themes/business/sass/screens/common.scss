@@ -33,6 +33,7 @@
 
 /* main-menu */
 .mobile-main-menu {
+  display: none;
   .region-main-menu {
     position: relative;
   }
@@ -102,9 +103,10 @@
             &.active-trail {
               color: $white;
             }
-            padding: 7px 0;
+            padding: 5px 0;
             border: 0 none;
             box-shadow: none;
+            line-height: 20px;
             &:hover, &:focus {
               background-color: transparent;
             }
@@ -339,6 +341,81 @@
     .dropdown-submenu > a:after{
       display: none;
     }
+  }
+  /* superfish menu */
+  .sf-menu {
+    ul {
+      width: 100% !important;
+      background: none;
+      display: block !important;
+      opacity: 1 !important;
+      position: static !important;
+      height: auto !important;
+      visibility: visible !important;
+    }
+    .sf-sub-indicator {
+      top: 15px;
+    }
+    li {
+      float: none !important;
+      margin: 0;
+    }
+    > li {
+      &.active-trail > a{
+        background: #404040;
+        color: #fff;
+      }
+      ul {
+        li.active-trail > a {
+          color: #fff;
+        }
+        .sf-sub-indicator {
+          display: none !important;
+        }
+        a.active {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .sf-menu.sf-style-default li, .sf-menu.sf-style-default.sf-navbar {
+    background: none;
+    float: none;
+    margin: 0;
+  }
+  .sf-menu.sf-style-default a,
+  .sf-menu.sf-style-default a:visited {
+    border-left: none;
+    color: #ccc;
+  }
+  .sf-menu.sf-style-default a:hover,
+  .sf-menu.sf-style-default a:focus {
+    color: #fff;
+  }
+  .sf-menu ul {
+    background: none;
+    display: block !important;
+    position: static;
+    visibility: visible !important;
+  }
+  .sf-menu.sf-style-default li:hover,
+  .sf-menu.sf-style-default li.sfHover,
+  .sf-menu.sf-style-default a:focus,
+  .sf-menu.sf-style-default a:hover,
+  .sf-menu.sf-style-default a:active {
+    background: none;
+  }
+  .sf-menu.sf-style-default li li {
+    background: none;
+  }
+  .sf-menu.sf-style-default > li:hover > a,
+  .sf-menu.sf-style-default > li:focus > a {
+    background-color: #404040 !important;
+  }
+  .sf-menu.sf-style-default li.active-trail > a,
+  .sf-menu.sf-style-default li a.active,
+  .sf-menu.sf-style-default li.sfHover > a {
+    color: #fff !important;
   }
 }
 

@@ -17,15 +17,15 @@ a {
 
 @media (min-width: 992px) {
   /* nav */
-  #main-menu-wrapper {
-    background: none;
-    #main-menu-inner {
-      background: #222;
-      .container {
-        background-color: #222;
-      }
-    }
-  }
+  // #main-menu-wrapper {
+  //   background: none;
+  //   #main-menu-inner {
+  //     background: #222;
+  //     .container {
+  //       background-color: #222;
+  //     }
+  //   }
+  // }
   .tb-megamenu {
     color: #ccc;
     .nav {
@@ -113,55 +113,55 @@ a {
     }
   }
   /* menu default */
-  #main-menu-wrapper {
-    ul.menu {
-      > li {
-        border-left-color: #000;
-        > a {
-          border-left-color: #3d3d3d;
-          &:hover, &:focus {
-            background-color: #383838;
-          }
-        }
-        > .active {
-          background-color: $red;
-        }
-      }
-      li {
-        ul.menu {
-          background-color: #383838;
-          li {
-            a {
-              border-color: #444;
-              &:hover, &:focus {
-                background: $red;
-              }
-            }
-            &:hover, &:focus {
-              > a {
-                background: $red;
-                &:before {
-                  color: #fff;
-                }
-              }
-            }
-          }
-          .expanded {
-            > a {
-              &:before {
-                color: #c5c5c5;
-              }
-            }
-          }
-        }
-        &:hover, &:focus {
-          > a {
-            background-color: #383838;
-          }
-        }
-      }
-    }
-  }
+  // #main-menu-wrapper {
+  //   ul.menu {
+  //     > li {
+  //       border-left-color: #000;
+  //       > a {
+  //         border-left-color: #3d3d3d;
+  //         &:hover, &:focus {
+  //           background-color: #383838;
+  //         }
+  //       }
+  //       > .active {
+  //         background-color: $red;
+  //       }
+  //     }
+  //     li {
+  //       ul.menu {
+  //         background-color: #383838;
+  //         li {
+  //           a {
+  //             border-color: #444;
+  //             &:hover, &:focus {
+  //               background: $red;
+  //             }
+  //           }
+  //           &:hover, &:focus {
+  //             > a {
+  //               background: $red;
+  //               &:before {
+  //                 color: #fff;
+  //               }
+  //             }
+  //           }
+  //         }
+  //         .expanded {
+  //           > a {
+  //             &:before {
+  //               color: #c5c5c5;
+  //             }
+  //           }
+  //         }
+  //       }
+  //       &:hover, &:focus {
+  //         > a {
+  //           background-color: #383838;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 /* slideshow */

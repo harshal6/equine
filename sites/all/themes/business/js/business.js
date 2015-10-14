@@ -48,7 +48,7 @@
       // Mobile menu
       $('#menu-toggle').mobileMenu({
         targetWrapper: '#main-menu-wrapper',
-        targetMenu: '#block-tb-megamenu-main-menu'
+        targetMenu: '#block-tb-megamenu-main-menu, #block-superfish-1'
       });
 
       if ($(window).width() <= 991) {

@@ -57,19 +57,6 @@ a:hover, a:focus {
 
 @media (min-width: 992px) {
   /* nav */
-  /* line 20, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper {
-    background: none;
-  }
-  /* line 22, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper #main-menu-inner {
-    background: #222;
-  }
-  /* line 24, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper #main-menu-inner .container {
-    background-color: #222;
-  }
-
   /* line 29, ../../../sass/colors/white/style.scss */
   .tb-megamenu {
     color: #ccc;
@@ -171,50 +158,6 @@ a:hover, a:focus {
   }
 
   /* menu default */
-  /* line 118, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu > li {
-    border-left-color: #000;
-  }
-  /* line 120, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu > li > a {
-    border-left-color: #3d3d3d;
-  }
-  /* line 122, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu > li > a:hover, #main-menu-wrapper ul.menu > li > a:focus {
-    background-color: #383838;
-  }
-  /* line 126, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu > li > .active {
-    background-color: #6db1b4;
-  }
-  /* line 131, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li ul.menu {
-    background-color: #383838;
-  }
-  /* line 134, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li ul.menu li a {
-    border-color: #444;
-  }
-  /* line 136, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li ul.menu li a:hover, #main-menu-wrapper ul.menu li ul.menu li a:focus {
-    background: #6db1b4;
-  }
-  /* line 141, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li ul.menu li:hover > a, #main-menu-wrapper ul.menu li ul.menu li:focus > a {
-    background: #6db1b4;
-  }
-  /* line 143, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li ul.menu li:hover > a:before, #main-menu-wrapper ul.menu li ul.menu li:focus > a:before {
-    color: #fff;
-  }
-  /* line 151, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li ul.menu .expanded > a:before {
-    color: #c5c5c5;
-  }
-  /* line 158, ../../../sass/colors/white/style.scss */
-  #main-menu-wrapper ul.menu li:hover > a, #main-menu-wrapper ul.menu li:focus > a {
-    background-color: #383838;
-  }
 }
 /* slideshow */
 /* line 168, ../../../sass/colors/white/style.scss */

@@ -184,3 +184,9 @@
   float: none;
   margin: 0;
 }
+
+/* line 170, ../../sass/screens/tablet.scss */
+#main-menu-wrapper ul > li > a {
+  padding-left: 23px;
+  padding-right: 23px;
+}

@@ -1094,13 +1094,15 @@
 /********************
 * Mobile menu *
 ********************/
-
 .navbar-toggle {
-  margin: 16px 20px 0 25px;
-  padding: 0;
-  border: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
   border-radius: 0;
   -webkit-border-radius: 0;
+  display: none;
+  float: right;
+  margin: 8px 0 0 10px;
+  padding: 7px 10px;
   text-align: center;
   .icon-bar {
     border-radius: 0;
@@ -1109,7 +1111,7 @@
     width: 20px;
   }
   &:hover, &:focus {
-    background: none;
+    background: #ddd;
   }
 }
 
