@@ -926,6 +926,11 @@
     display: none;
 }
 
+
+#main-menu-wrapper {
+    display: none;
+}
+
 @media (min-width: 992px) {
     /* menu default */
     #main-menu-inner {
@@ -933,6 +938,7 @@
         padding-right: 0;
     }
     #main-menu-wrapper {
+        display: block;
         border: none;
         border-bottom: 2px solid #d14b0a;
         background: #f9a145;
