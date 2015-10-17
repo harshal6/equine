@@ -40,11 +40,7 @@
           <?php endif; ?>
         </div>
       <?php endif; ?>
-      <a id="menu-toggle" class="navbar-toggle" href="#menu-toggle">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
+      
       <?php print render($page['header']); ?>
     </div>
   </header>
@@ -52,6 +48,15 @@
   <?php if($main_menu = render($page['main_menu'])): ?>
     <nav id="main-menu-wrapper" class="navbar navbar-default" role="navigation">
       <div class="container">
+        <?php if($search = render($page['search'])): ?>
+          <?php print $search; ?>
+        <?php endif; ?>
+        <a id="menu-toggle" class="navbar-toggle" href="#menu-toggle">
+          <span class="title">Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
         <div class="collapse navbar-collapse" id="main-menu-inner">
           <?php print $main_menu; ?>
         </div>

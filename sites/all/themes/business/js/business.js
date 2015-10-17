@@ -47,7 +47,7 @@
 
       // Mobile menu
       $('#menu-toggle').mobileMenu({
-        targetWrapper: '#main-menu-wrapper',
+        targetWrapper: '#main-menu-inner',
         targetMenu: '#block-tb-megamenu-main-menu, #block-superfish-1'
       });
 

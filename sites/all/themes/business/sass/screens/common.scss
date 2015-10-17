@@ -27,7 +27,26 @@
   max-height: none;
   margin: 0 !important;
   &.collapse {
-    overflow-y: visible !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* block search */
+#block-search-form {
+  position: relative;
+  float: left;
+  width: 195px;
+  .form-text {
+    padding: 7px 27px 7px 15px;
+    color: #f8c173;
+    width: 100%;
+    max-width: 100%;
+    &:hover, &:focus {
+      max-width: 100%;
+    }
+  }
+  .search-icon {
+    display: none !important;
   }
 }
 
@@ -420,9 +439,6 @@
 
 /* End Mobile menu */
 
-#block-search-form {
-  width: 260px;
-}
 
 /*slideshow*/
 #slideshow-wrapper {

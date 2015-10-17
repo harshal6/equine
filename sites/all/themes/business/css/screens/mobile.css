@@ -95,41 +95,6 @@ h2 {
   content: "\f0d8";
 }
 
-/* line 60, ../../sass/screens/mobile.scss */
-#block-search-form.hover .search-icon {
-  background: #dddddd;
-}
-/* line 63, ../../sass/screens/mobile.scss */
-#block-search-form.hover #search-block-form {
-  display: block;
-}
-
-/* line 68, ../../sass/screens/mobile.scss */
-#block-search-form {
-  position: relative;
-  width: 44px;
-  height: 30px;
-  float: right;
-  margin-right: 10px;
-  cursor: pointer;
-}
-/* line 75, ../../sass/screens/mobile.scss */
-#block-search-form #search-block-form {
-  position: absolute;
-  z-index: 20;
-  right: -2px;
-  top: 29px;
-  width: 220px;
-  background: #fff;
-  border: 1px solid #dddddd;
-  border-width: 10px;
-  display: none;
-}
-/* line 86, ../../sass/screens/mobile.scss */
-#block-search-form:hover, #block-search-form:focus {
-  background: #dddddd;
-}
-
 /*slideshow*/
 /* line 93, ../../sass/screens/mobile.scss */
 #slideshow-wrapper .container {

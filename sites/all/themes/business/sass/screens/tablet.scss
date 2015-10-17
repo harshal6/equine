@@ -167,9 +167,18 @@
   }
 }
 
-#main-menu-wrapper .content ul > li > a {
-  padding: {
-    left: 23px;
-    right: 23px;
+#main-menu-wrapper {
+  .container {
+    padding-right: 32px;
   }
+  .content ul > li > a {
+    padding: {
+      left: 22px;
+      right: 22px;
+    }
+  }
+}
+
+#block-search-form {
+  right: 15px;
 }

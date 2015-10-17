@@ -185,8 +185,17 @@
   margin: 0;
 }
 
-/* line 170, ../../sass/screens/tablet.scss */
+/* line 171, ../../sass/screens/tablet.scss */
+#main-menu-wrapper .container {
+  padding-right: 32px;
+}
+/* line 174, ../../sass/screens/tablet.scss */
 #main-menu-wrapper .content ul > li > a {
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+/* line 182, ../../sass/screens/tablet.scss */
+#block-search-form {
+  right: 15px;
 }

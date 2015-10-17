@@ -1095,23 +1095,35 @@
 * Mobile menu *
 ********************/
 .navbar-toggle {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background: none;
+  border: none;
   border-radius: 0;
   -webkit-border-radius: 0;
   display: none;
   float: right;
-  margin: 8px 0 0 10px;
-  padding: 7px 10px;
+  margin: 0;
+  padding: 14px 0 9px 20px;
   text-align: center;
+  width: 86px;
+  .title {
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff !important;
+    margin-right: 7px;
+    position: relative;
+    top: -2px;
+    font-style: italic;
+  }
   .icon-bar {
     border-radius: 0;
     -webkit-border-radius: 0;
-    background-color: #000;
+    background-color: #fff !important;
     width: 20px;
+    overflow: hidden;
   }
   &:hover, &:focus {
-    background: #ddd;
+    background: none !important;
   }
 }
 
