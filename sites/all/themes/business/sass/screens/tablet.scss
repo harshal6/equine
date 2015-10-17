@@ -173,10 +173,17 @@
   }
   .content ul > li > a {
     padding: {
-      left: 22px;
-      right: 22px;
+      left: 13px;
+      right: 13px;
+    }
+    &.menuparent{
+      padding-right: 20px;
     }
   }
+}
+
+.sf-main-menu .sf-sub-indicator{
+  right: 4px;
 }
 
 #block-search-form {

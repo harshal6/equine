@@ -191,11 +191,20 @@
 }
 /* line 174, ../../sass/screens/tablet.scss */
 #main-menu-wrapper .content ul > li > a {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+/* line 179, ../../sass/screens/tablet.scss */
+#main-menu-wrapper .content ul > li > a.menuparent {
+  padding-right: 20px;
 }
 
-/* line 182, ../../sass/screens/tablet.scss */
+/* line 185, ../../sass/screens/tablet.scss */
+.sf-main-menu .sf-sub-indicator {
+  right: 4px;
+}
+
+/* line 189, ../../sass/screens/tablet.scss */
 #block-search-form {
   right: 15px;
 }

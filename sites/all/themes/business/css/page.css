@@ -1202,8 +1202,9 @@
   position: relative;
   top: -2px;
   font-style: italic;
+  display: none;
 }
-/* line 1118, ../sass/page.scss */
+/* line 1119, ../sass/page.scss */
 .navbar-toggle .icon-bar {
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -1211,12 +1212,12 @@
   width: 20px;
   overflow: hidden;
 }
-/* line 1125, ../sass/page.scss */
+/* line 1126, ../sass/page.scss */
 .navbar-toggle:hover, .navbar-toggle:focus {
   background: none !important;
 }
 
-/* line 1130, ../sass/page.scss */
+/* line 1131, ../sass/page.scss */
 .btn-close {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1232,12 +1233,12 @@
   font-size: 12px;
   color: #aaa;
 }
-/* line 1141, ../sass/page.scss */
+/* line 1142, ../sass/page.scss */
 .btn-close:hover, .btn-close:focus {
   color: white;
 }
 
-/* line 1146, ../sass/page.scss */
+/* line 1147, ../sass/page.scss */
 .form-textarea-wrapper textarea {
   max-width: 100%;
 }
